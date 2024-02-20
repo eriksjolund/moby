@@ -66,8 +66,9 @@ target="_blank">moby/moby repository</a>.
 8. Clone the fork to your local host into a repository called `moby-fork`.
 
    ```bash
-   $ git clone https://github.com/moxiegirl/moby.git moby-fork
+   $ git clone https://github.com/YOUR_ACCOUNT/moby.git moby-fork
    ```
+    In the command above replace `YOUR_ACCOUNT` with your GitHub username.
 
     Naming your local repo `moby-fork` should help make these instructions
     easier to follow; experienced coders don't typically change the name.
@@ -88,7 +89,7 @@ When you contribute to Docker, you must certify you agree with the
 You indicate your agreement by signing your `git` commits like this:
 
 ```
-Signed-off-by: Pat Smith <pat.smith@email.com>
+Signed-off-by: FirstName LastName <emailname@example.com>
 ```
 
 To create a signature, you configure your username and email address in Git.
@@ -119,7 +120,7 @@ To configure your username, email, and add a remote:
 3. Set your `user.email` for the repository.
 
    ```bash
-   $ git config --local user.email "emailname@mycompany.com"
+   $ git config --local user.email "emailname@example.com"
    ```
 
 4. Set your local repo to track changes upstream, on the `moby/moby` repository.
@@ -136,12 +137,12 @@ To configure your username, email, and add a remote:
    core.filemode=true
    core.bare=false
    core.logallrefupdates=true
-   remote.origin.url=https://github.com/moxiegirl/moby.git
+   remote.origin.url=https://github.com/YOUR_ACCOUNT/moby.git
    remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
    branch.master.remote=origin
    branch.master.merge=refs/heads/master
-   user.name=Mary Anthony
-   user.email=mary@docker.com
+   user.name=FirstName LastName
+   user.email=emailname@example.com
    remote.upstream.url=https://github.com/moby/moby.git
    remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
    ```
